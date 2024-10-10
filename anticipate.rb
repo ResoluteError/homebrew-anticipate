@@ -5,21 +5,21 @@
 class Anticipate < Formula
   desc "Anticipate CLI"
   homepage ""
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/ResoluteError/Go-CLI-Showcase/releases/download/v0.0.3/Go-CLI-Showcase_Darwin_x86_64.tar.gz"
-      sha256 "29d45632c7ca63da65fb7991f3822cf97ef7dadf34ba6def45c5ec399edff506"
+      url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.4/Anticipate-CLI_Darwin_x86_64.tar.gz"
+      sha256 "6229d3a35c9cd762e70002534d41af3fe4c27282e571e23874bb18d36d857b31"
 
       def install
         bin.install "anticipate"
       end
     end
     on_arm do
-      url "https://github.com/ResoluteError/Go-CLI-Showcase/releases/download/v0.0.3/Go-CLI-Showcase_Darwin_arm64.tar.gz"
-      sha256 "a98f25e1dd6aaef96c6c1c3dd82a8a5fb6e0bdc68f3794e51821dde7fec64c8d"
+      url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.4/Anticipate-CLI_Darwin_arm64.tar.gz"
+      sha256 "4ac48f67746e8c2436ec683e97581203dbdcdf61a7fd7d2709c41e9569571776"
 
       def install
         bin.install "anticipate"
@@ -30,8 +30,8 @@ class Anticipate < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ResoluteError/Go-CLI-Showcase/releases/download/v0.0.3/Go-CLI-Showcase_Linux_x86_64.tar.gz"
-        sha256 "b0e365bef54fec8832508bd9ea2194eb0a6e07d8bd6af645eb8e235dd5bc791c"
+        url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.4/Anticipate-CLI_Linux_x86_64.tar.gz"
+        sha256 "f1fbe1f1da8e64f5b690449f6b13579f580d68829fdaed1136e8a1bbf9c64112"
 
         def install
           bin.install "anticipate"
@@ -40,8 +40,8 @@ class Anticipate < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ResoluteError/Go-CLI-Showcase/releases/download/v0.0.3/Go-CLI-Showcase_Linux_arm64.tar.gz"
-        sha256 "6ee8afab2fd247788ed655192af027842a40fa3416a57b8c3a1e47e898a38866"
+        url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.4/Anticipate-CLI_Linux_arm64.tar.gz"
+        sha256 "f859ff7fbabed6d03bb2d82957654a7a9fc52f2bf20a338e768c8489fda2645f"
 
         def install
           bin.install "anticipate"
