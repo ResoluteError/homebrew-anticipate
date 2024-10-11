@@ -5,21 +5,21 @@
 class Anticipate < Formula
   desc "Anticipate CLI"
   homepage ""
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.5/anticipate_Darwin_x86_64.tar.gz"
-      sha256 "2768b5ffc1594660a1ce6c382ee1b9413ad2a6f6e51a129c444f2de715fd92df"
+      url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.6/anticipate_Darwin_x86_64.tar.gz"
+      sha256 "79f39e3c783227b81abbb242445395874c259fd3f3b7a17a0702e17721b38824"
 
       def install
         bin.install "anticipate"
       end
     end
     on_arm do
-      url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.5/anticipate_Darwin_arm64.tar.gz"
-      sha256 "6c4d5268d232e2df7b60df93828990d1e859ab3d213478dc832c5f9e0288a16d"
+      url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.6/anticipate_Darwin_arm64.tar.gz"
+      sha256 "5cf9b7ea333d8d01067cf69a13dfc414d11efa124eeb83cee6448407a774b99c"
 
       def install
         bin.install "anticipate"
@@ -30,8 +30,8 @@ class Anticipate < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.5/anticipate_Linux_x86_64.tar.gz"
-        sha256 "09752297df4621e3f51c7bc9fccb7cbfe8d3915f32c808b14a75f23d40eed072"
+        url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.6/anticipate_Linux_x86_64.tar.gz"
+        sha256 "2f24c22cb4a39cfbfccc125d3a006cb40c4aad85a51c1cd9e691993c4e7c3444"
 
         def install
           bin.install "anticipate"
@@ -40,8 +40,8 @@ class Anticipate < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.5/anticipate_Linux_arm64.tar.gz"
-        sha256 "46ed32947589090f30984d8a8eb52876e03c1fe67da0c64224a96b01cfccdec4"
+        url "https://github.com/ResoluteError/Anticipate-CLI/releases/download/v0.0.6/anticipate_Linux_arm64.tar.gz"
+        sha256 "dfe8302ca0c851b9c17a51343513c97497430a5061178b4bb198958a7313443a"
 
         def install
           bin.install "anticipate"
